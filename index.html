@@ -14,40 +14,49 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="page-header">
-      <div class="container main-nav">
-        <nav class="nav">
+      <div class="container page-header__main-nav">
+        <nav class="page-header__nav">
           <a href="./index.html" class="logo"
-            >Web<span class="studio">Studio</span>
+            >Web<span class="logo__studio">Studio</span>
           </a>
           <ul class="site-nav list">
-            <li class="item">
-              <a href="index.html" class="link current">Студія</a>
+            <li class="site-nav__item">
+              <a
+                href="index.html"
+                class="site-nav__link site-nav__link--current link"
+                >Студія</a
+              >
             </li>
-            <li class="item">
-              <a href="portfolio.html" class="link">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="portfolio.html" class="site-nav__link link">Портфоліо</a>
             </li>
-            <li class="item"><a href="Контакти" class="link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="Контакти" class="site-nav__link link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts-list list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
+          <li class="contacts-list__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="link contacts-list__link"
+            >
               <span>
-                <svg class="mail-icon" width="16" height="12">
+                <svg class="contacts-list__icons" width="16" height="12">
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
               </span>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="link contacts-list__link">
               <span>
-                <svg class="mail-icon" width="10" height="16">
+                <svg class="contacts-list__icons" width="10" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
               </span>
@@ -60,40 +69,40 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="feature-list list">
-            <li class="item icon-antenna">
-              <h3 class="title">Увага до деталей</h3>
-              <p class="text">
+          <ul class="features__list list">
+            <li class="features__item features__icon-antenna">
+              <h3 class="features__title">Увага до деталей</h3>
+              <p class="features__text">
                 Ідейні мотиви, а також початок повсякденної праці з формування
                 позиції.
               </p>
             </li>
-            <li class="item icon-clock">
-              <h3 class="title">Пунктуальність</h3>
-              <p class="text">
+            <li class="features__item features__icon-clock">
+              <h3 class="features__title">Пунктуальність</h3>
+              <p class="features__text">
                 Задача організації, а надто рамки і місце навчання кадрів тягне
                 за собою.
               </p>
             </li>
-            <li class="item icon-diagram">
-              <h3 class="title">Планування</h3>
-              <p class="text">
+            <li class="features__item features__icon-diagram">
+              <h3 class="features__title">Планування</h3>
+              <p class="features__text">
                 Рівним чином консультація з широким активом значною мірою
                 обумовлює.
               </p>
             </li>
-            <li class="item icon-astronaut">
-              <h3 class="title">Сучасні технології</h3>
-              <p class="text">
+            <li class="features__item features__icon-astronaut">
+              <h3 class="features__title">Сучасні технології</h3>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -103,7 +112,7 @@
       </section>
       <section class="section work">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємось</h2>
+          <h2 class="section__title">Чим ми займаємось</h2>
           <ul class="work-list list">
             <li class="item">
               <img
@@ -137,7 +146,7 @@
       </section>
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
               <img
@@ -149,31 +158,52 @@
               <div class="team-content">
                 <h3 class="title">Ігор Дем'яненко</h3>
                 <p class="profession">Product Designer</p>
-                <ul class="team-links list">
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                <ul class="social-networks list">
+                  <li class="social-networks social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -191,31 +221,51 @@
               <div class="team-content">
                 <h3 class="title">Ольга Репіна</h3>
                 <p class="profession">Frontend Developer</p>
-                <ul class="team-links list">
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                <ul class="social-networks list">
+                  <li class="social-networks__link link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -233,31 +283,51 @@
               <div class="team-content">
                 <h3 class="title">Микола Тарасов</h3>
                 <p class="profession">Marketing</p>
-                <ul class="team-links list">
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                <ul class="social-networks list">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -275,31 +345,51 @@
               <div class="team-content">
                 <h3 class="title">Михайло Єрмаков</h3>
                 <p class="profession">UI Designer</p>
-                <ul class="team-links list">
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                <ul class="social-networks list">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="card-link">
-                    <a href="" class="background-icon"
-                      ><svg class="card-icon">
+                  <li class="social-networks__link">
+                    <a
+                      href=""
+                      class="
+                        social-networks__link-background
+                        social-networks__link-background--inverse
+                      "
+                      ><svg class="social-networks__link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -312,7 +402,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients-list list">
             <li class="client">
               <a href="" class="client-link"
@@ -363,8 +453,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-blocks">
-          <a href="./index.html" class="logo secondary"
-            >Web<span class="studio-footer">Studio</span></a
+          <a href="./index.html" class="logo logo--secondary"
+            >Web<span class="logo__studio-footer">Studio</span></a
           >
           <address class="footer-text">
             <p class="adress">м. Київ, пр-т Лесі Українки, 26</p>
@@ -382,34 +472,34 @@
         </div>
         <div class="footer-blocks secondary">
           <p class="join">приєднуйтесь</p>
-          <ul class="links-list list">
-            <li class="footer-link">
-              <a href="" class="link-background"
-                ><svg class="link-icon">
+          <ul class="social-networks list">
+            <li class="social-networks__link">
+              <a href="" class="social-networks__link-background"
+                ><svg class="social-networks__link-icon">
                   <use href="./images/sprite.svg#icon-instagram-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-link">
-              <a href="" class="link-background"
-                ><svg class="link-icon">
+            <li class="social-networks__link">
+              <a href="" class="social-networks__link-background"
+                ><svg class="social-networks__link-icon">
                   <use href="./images/sprite.svg#icon-twitter-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-link">
-              <a href="" class="link-background"
-                ><svg class="link-icon">
+            <li class="social-networks__link">
+              <a href="" class="social-networks__link-background link"
+                ><svg class="social-networks__link-icon">
                   <use href="./images/sprite.svg#icon-facebook-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-link">
-              <a href="" class="link-background"
-                ><svg class="link-icon">
+            <li class="social-networks__link">
+              <a href="" class="social-networks__link-background link"
+                ><svg class="social-networks__link-icon">
                   <use
                     href="./images/sprite.svg#icon-linkedin-footer"
-                    class="link-icon"
+                    class="social-networks__link-icon"
                   ></use>
                 </svg>
               </a>
@@ -435,7 +525,7 @@
               />
             </div>
 
-            <button type="submit" class="footer-button">
+            <button type="submit" class="button button--footer-btn">
               Підписатись
               <svg class="footer-icon">
                 <use href="./images/sprite.svg#icon-icon-send"></use>
@@ -501,7 +591,7 @@
             </label>
           </div>
 
-          <button type="submit" class="button secondary">Відправити</button>
+          <button type="submit" class="button button--modal">Відправити</button>
         </form>
       </div>
     </div>
