@@ -1,8 +1,3 @@
-@charset "UTF-8";
-/* колір основного тексту #212121 */
-/* вторинний колір #252525 */
-/* колір фону #FFFFFF */
-/* вторинний колір фону #F5F4FA */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -358,30 +353,29 @@ textarea {
   line-height: 1.71;
 }
 
-/* Works */
 .work {
   padding-top: 0;
 }
 
-.work-list {
+.work__list {
   display: flex;
 }
 
-.work-list .item {
+.work__item {
   width: 370px;
   margin-right: 30px;
   position: relative;
 }
 
-.work-list .item:nth-child(3n) {
+.work__list .item:nth-child(3n) {
   margin-right: 0;
 }
 
-.work-list .image {
+.work__image {
   display: block;
 }
 
-.work-list .description {
+.work__description {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -398,17 +392,16 @@ textarea {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* Team */
-.team {
+.section-team {
   background: var(--secondary-background-color);
   text-align: center;
 }
 
-.team-list {
+.section-team__list {
   display: flex;
 }
 
-.team-list .item {
+.section-team__item {
   width: 270px;
   margin-right: 30px;
   background-color: var(--primary-background-color);
@@ -416,15 +409,15 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item:nth-child(4n) {
+.section-team__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.team-content {
+.section-team__content {
   padding: 30px 32px;
 }
 
-.title {
+.section-team__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -433,7 +426,7 @@ textarea {
   color: var(--title-text-color);
 }
 
-.team-list .profession {
+.section-team__profession {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
@@ -442,26 +435,25 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.team-list .photo {
+.section-team__photo {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* Постійні клієнти */
 .clients-list {
   display: flex;
 }
 
-.client {
+.clients-list__client {
   margin-right: 30px;
 }
 
-.client:nth-child(6n) {
+.clients-list__client:nth-child(6n) {
   margin-right: 0;
 }
 
-.client-link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,30 +466,29 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon {
+.clients-list__icon {
   max-width: 106px;
   max-height: 60px;
   align-self: center;
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-/* Footer */
-.footer > .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-blocks {
+.footer__blocks {
   width: 270px;
   margin-right: 30px;
 }
 
-.footer-blocks:nth-child(3n) {
+.footer__blocks:nth-child(3n) {
   margin: 0;
 }
 
@@ -507,29 +498,29 @@ textarea {
   padding-bottom: 60px;
 }
 
-.footer-text {
+.footer__text {
   font-style: normal;
   margin-top: 20px;
 }
 
-.adress {
+.footer__adress {
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-background-color);
 }
 
-.mail {
+.footer__mail {
   margin-bottom: 9px;
 }
 
-.footer-list .link {
+.footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.join {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -539,7 +530,7 @@ textarea {
   color: var(--primary-background-color);
 }
 
-.footer-blocks.form {
+.footer-form__subscribe {
   width: 570px;
 }
 
@@ -547,11 +538,11 @@ textarea {
   display: flex;
 }
 
-.footer-form-field {
+.footer-form__field {
   margin-right: 12px;
 }
 
-.footer-form-field input {
+.footer-form__field--footer-form__input {
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -565,36 +556,35 @@ textarea {
   padding-left: 16px;
 }
 
-.footer-form-field input::placeholder {
+.footer-form__field--input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-icon {
+.footer__btn-icon {
   width: 24px;
   height: 24px;
   fill: var(--primary-background-color);
   margin-left: 10px;
 }
 
-/* ПОРТФОЛІО */
 .filters-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filters-list .item {
+.filters-list__item {
   margin-right: 8px;
 }
 
-.filters-list .item:nth-child(5n) {
+.filters-list__item:nth-child(5n) {
   margin-right: 0;
 }
 
-.filters-list .filter {
+.filters-list__filter {
   min-width: none;
   display: inline-block;
   padding: 6px 22px;
@@ -610,8 +600,8 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filters-list .filter:hover,
-.filters-list .filter:focus {
+.filters-list__filter:hover,
+.filters-list__filter:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -622,32 +612,32 @@ textarea {
   flex-wrap: wrap;
 }
 
-.projects-list .item {
+.projects-list__item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.projects-list .item:nth-child(3n) {
+.projects-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.projects-list .item:nth-last-child(-n + 3) {
+.projects-list__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.projects-list .link {
+.project-card {
   text-decoration: none;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list .project:hover::before,
-.projects-list .project:focus::before {
+.project-card__illustration--hover::before,
+.project-card__illustration--focus::before {
   opacity: 0.9;
 }
 
-.projects-list .overlay {
+.project-card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -664,13 +654,13 @@ textarea {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list .link:hover .overlay,
-.projects-list .link:focus .overlay {
+.project-card:hover .overlay,
+.project-card:focus .overlay {
   opacity: 0.9;
   transform: translateY(0);
 }
 
-.projects-list .overlay-content {
+.project-card__overlay-content {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -680,29 +670,29 @@ textarea {
   color: #ffffff;
 }
 
-.projects-list .project {
+.project-card__illustration {
   position: relative;
   overflow: hidden;
 }
 
-.projects-list .link:hover,
-.projects-list .link:focus {
+.project-card--hover,
+.project-card--focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   opacity: 0.9;
 }
 
-.projects-list .illustration {
+.project-card__img {
   display: block;
 }
 
-.item-content {
+.projects-list__item-content {
   width: 370px;
   border: 1px solid #eeeeee;
   border-top: transparent;
   padding: 20px 24px;
 }
 
-.projects-list .name {
+.projects-list__project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -711,14 +701,12 @@ textarea {
   margin-bottom: 4px;
 }
 
-.projects-list .description {
+.projects-list__description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
 }
 
-/* Button */
-/* Modal window */
 .backdrop {
   position: fixed;
   top: 0;
@@ -781,7 +769,7 @@ textarea {
   cursor: pointer;
 }
 
-.close-modal {
+.close__cross {
   display: flex;
   width: 18px;
   height: 18px;
@@ -797,7 +785,7 @@ textarea {
   /* align-self: center; */
 }
 
-.form-title {
+.modal-form__title {
   display: flex;
   margin-bottom: 12px;
   justify-content: center;
@@ -809,7 +797,7 @@ textarea {
   color: var(--title-text-color);
 }
 
-.form-field {
+.modal-form__field {
   position: relative;
   margin-bottom: 10px;
   display: flex;
@@ -817,14 +805,14 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field.check {
+.modal-form__field--check {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.form-label {
+.modal-form__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.2;
@@ -833,7 +821,7 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label-check {
+.modal-form__label-check {
   display: flex;
   align-items: center;
   margin-left: 14px;
@@ -842,7 +830,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.form-label-check::before {
+.modal-form__label-check::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -853,7 +841,7 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.checkbox:checked + .form-label-check::before {
+.modal-form__checkbox:checked + .modal-form__label-check::before {
   background-image: url(../images/checked-modal.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -864,13 +852,13 @@ textarea {
   border-radius: 2 px;
 }
 
-.check-link {
+.modal-form__check-link {
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 4px;
 }
 
-.form-input {
+.modal-form__input {
   margin: 0;
   padding: 0;
   height: 40px;
@@ -881,24 +869,24 @@ textarea {
   border-radius: 4px;
 }
 
-.form-input:hover,
-.form-input:focus {
+.modal-form__input:hover,
+.modal-form__input:focus {
   cursor: pointer;
 }
 
-.form-input:focus {
+.modal-form__input:focus {
   outline-color: var(--accent-color);
 }
 
-.form-input:focus + .form-label {
+.modal-form__input:focus + .modal-form__label {
   color: var(--accent-color);
 }
 
-.form-field textarea:focus + .form-label {
+.modal-form__textarea:focus + .modal-form__label {
   color: var(--accent-color);
 }
 
-.form-field textarea {
+.modal-form__textarea {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -906,21 +894,21 @@ textarea {
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field textarea:focus,
-.form-field textarea:hover {
+.modal-form__textarea:focus,
+.modal-form__textarea:hover {
   outline-color: var(--accent-color);
   outline-width: 1px;
   cursor: pointer;
 }
 
-.form-field textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -931,7 +919,7 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus ~ .modal-icon {
+.modal-form__input:focus ~ .modal-form__icon {
   color: var(--accent-color);
   fill: currentColor;
 }
