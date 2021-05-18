@@ -4,8 +4,8 @@
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
-        "../sass/base/common.scss",
-        "../sass/base/container.scss",
+        "../sass/base/_common.scss",
+        "../sass/base/-container.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_page-header.scss",
         "../sass/components/_site-nav.scss",
