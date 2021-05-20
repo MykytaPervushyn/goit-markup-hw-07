@@ -5,11 +5,15 @@
 
 .contacts-list__item {
   margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
-.contacts-list__item:first-child {
-  margin-left: 0;
-}
+// .contacts-list__item:first-child {
+//   margin-left: 0;
+// }
 
 .contacts-list__link {
   display: flex;

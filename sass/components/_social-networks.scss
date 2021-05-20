@@ -4,11 +4,15 @@
 
 .social-networks__link {
   margin-right: 10px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
-.social-networks__link:nth-child(4n) {
-  margin-right: 0;
-}
+// .social-networks__link:nth-child(4n) {
+//   margin-right: 0;
+// }
 
 .social-networks__link-background:hover,
 .social-networks__link-background:focus {
@@ -18,7 +22,7 @@
 .social-networks__link-background {
   display: flex;
   color: var(--primary-background-color);
-  background-color: #ffffff10;
+  background-color: var(--dark-background-color);
   border-radius: 50%;
   width: 44px;
   height: 44px;

@@ -11,11 +11,12 @@
   margin-right: 30px;
 
   position: relative;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.work__list .item:nth-child(3n) {
-  margin-right: 0;
-}
 
 .work__image {
   display: block;

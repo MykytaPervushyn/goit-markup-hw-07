@@ -4,11 +4,15 @@
 
 .clients-list__client {
   margin-right: 30px;
+
+  &:nth-child(6n) {
+    margin-right: 0;
+  }
 }
 
-.clients-list__client:nth-child(6n) {
-  margin-right: 0;
-}
+// .clients-list__client:nth-child(6n) {
+//   margin-right: 0;
+// }
 
 .clients-list__link {
   display: flex;
@@ -23,6 +27,12 @@
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .clients-list__icon {
