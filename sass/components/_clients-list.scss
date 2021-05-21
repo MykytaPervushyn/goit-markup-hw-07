@@ -1,49 +1,77 @@
 .clients-list {
   display: flex;
-}
+  flex-wrap: wrap;
+  margin: -15px;
 
-.clients-list__client {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 
-  &:nth-child(6n) {
-    margin-right: 0;
+  &__client {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-background-color);
+    fill: var(--icons-color);
+
+    min-width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    max-width: 106px;
+    max-height: 60px;
+
+    align-self: center;
   }
 }
 
-// .clients-list__client:nth-child(6n) {
-//   margin-right: 0;
+// .clients-list__client {
+//   margin: 15px;
+//   width: calc((100% - 2 * 30px) / 2);
 // }
 
-.clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-background-color);
-  fill: var(--icons-color);
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icons-color);
-  border-radius: 4px;
+// .clients-list__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: var(--primary-background-color);
+//   fill: var(--icons-color);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   min-width: 170px;
+//   height: 92px;
+//   border: 1px solid var(--icons-color);
+//   border-radius: 4px;
 
-  // &:hover,
-  // :focus {
-  //   fill: var(--accent-color);
-  //   border-color: var(--accent-color);
-  // }
-}
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-.clients-list__icon {
-  max-width: 106px;
-  max-height: 60px;
+// .clients-list__icon {
+//   max-width: 106px;
+//   max-height: 60px;
 
-  align-self: center;
-}
+//   align-self: center;
+// }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
+// .clients-list__link:hover,
+// .clients-list__link:focus {
+//   fill: var(--accent-color);
+//   border-color: var(--accent-color);
+// }
